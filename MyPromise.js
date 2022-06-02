@@ -1,8 +1,8 @@
-const STATE = {
+const STATE = Object.freeze({
   FULFILLED: "fulfilled",
   REJECTED: "rejected",
   PENDING: "pending",
-}
+})
 
 class MyPromise {
   #thenCbs = []
